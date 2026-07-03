@@ -30,7 +30,11 @@ const SOCIALS = [
 		Icon: Book,
 	},
 	{ label: "Email", href: "mailto:harrisoncutrone@gmail.com", Icon: Mail },
-	{ label: "Resume", href: "/HarrisonCutroneResume.pdf", Icon: FileText },
+	{
+		label: "Resume",
+		href: "/Harrison_Cutrone_Resume.docx.pdf",
+		Icon: FileText,
+	},
 ];
 
 export function Socials({ className }: { className?: string }) {
