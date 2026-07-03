@@ -5,6 +5,7 @@ import {
 	PersonalProjects,
 	PhotoGallery,
 	Skills,
+	Socials,
 	WorkProjects,
 } from "@/components";
 
@@ -25,6 +26,13 @@ export default function Page() {
 				<PersonalProjects />
 				<PhotoGallery />
 				<Books />
+				<footer className="border-t border-border py-10 text-sm text-muted-foreground">
+					<p className="text-pretty">
+						Designed &amp; built by Harrison Cutrone. Made with React, Radix UI,
+						and Tailwind CSS.
+					</p>
+					<Socials className="justify-center sm:justify-start" />
+				</footer>
 			</main>
 		</div>
 	);

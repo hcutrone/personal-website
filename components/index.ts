@@ -6,3 +6,4 @@ export * from "./PersonalProjects";
 export * from "./Photos";
 export * from "./SectionHeader";
 export * from "./Skills";
+export * from "./Socials";
