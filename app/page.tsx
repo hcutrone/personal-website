@@ -1,4 +1,11 @@
-import { Landing } from "@/components";
+import {
+	Books,
+	Landing,
+	PersonalProjects,
+	PhotoGallery,
+	Skills,
+	WorkProjects,
+} from "@/components";
 
 export default function Page() {
 	return (
@@ -9,6 +16,11 @@ export default function Page() {
 			/>
 			<main className="mx-auto max-w-4xl px-6">
 				<Landing />
+				<Skills />
+				<WorkProjects />
+				<PersonalProjects />
+				<PhotoGallery />
+				<Books />
 			</main>
 		</div>
 	);
