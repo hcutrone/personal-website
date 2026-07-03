@@ -1,4 +1,5 @@
 export * from "./Books";
+export * from "./Header";
 export * from "./iFixitProjects";
 export * from "./Landing";
 export * from "./PersonalProjects";
