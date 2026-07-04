@@ -152,7 +152,7 @@ export function PhotoGallery() {
 										className="object-contain"
 									/>
 								</div>
-								<figcaption className="flex items-center justify-between gap-4 px-5 py-4">
+								<figcaption className="flex flex-col sm:flex-row items-start sm:items-center justify-between sm:gap-4 px-3 sm:px-5 py-2 sm:py-4">
 									<Dialog.Title className="text-sm font-medium text-foreground text-pretty">
 										{active.alt}
 									</Dialog.Title>
