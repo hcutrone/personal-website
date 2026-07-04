@@ -8,6 +8,7 @@ const BOOKS = [
 		genre: "Fantasy",
 		stars: 5,
 		color: "primary",
+		link: "https://www.veschwab.com/addie",
 	},
 	{
 		title: "Project Hail Mary",
@@ -15,6 +16,7 @@ const BOOKS = [
 		genre: "Sci-fi",
 		stars: 4.75,
 		color: "pop-amber",
+		link: "https://andyweirauthor.com/",
 	},
 	{
 		title: "Ninth House",
@@ -22,6 +24,7 @@ const BOOKS = [
 		genre: "Fantasy",
 		stars: 5,
 		color: "pop-pink",
+		link: "https://www.leighbardugo.com/book/ninth-house/",
 	},
 	{
 		title: "The Will of the Many",
@@ -29,6 +32,7 @@ const BOOKS = [
 		genre: "Fantasy",
 		stars: 5,
 		color: "pop-cyan",
+		link: "https://en.wikipedia.org/wiki/The_Will_of_the_Many",
 	},
 	{
 		title: "Dark Matter",
@@ -36,6 +40,7 @@ const BOOKS = [
 		genre: "Sci-fi",
 		stars: 5,
 		color: "primary",
+		link: "https://blakecrouch.com/books/dark-matter/",
 	},
 	{
 		title: "Oathbringer (The Stormlight Archive #3)",
@@ -43,6 +48,7 @@ const BOOKS = [
 		genre: "Fantasy",
 		stars: 4.5,
 		color: "pop-amber",
+		link: "https://www.brandonsanderson.com/pages/the-stormlight-archive-series",
 	},
 	{
 		title: "The Butchers Masquerade (Dungeon Crawler Carl #5)",
@@ -50,6 +56,7 @@ const BOOKS = [
 		genre: "Fantasy",
 		stars: 5,
 		color: "pop-pink",
+		link: "https://mattdinniman.com/books/the-butchers-masquerade/",
 	},
 	{
 		title: "Tomorrow, and Tomorrow, and Tomorrow",
@@ -57,6 +64,7 @@ const BOOKS = [
 		genre: "Fiction",
 		stars: 5,
 		color: "pop-cyan",
+		link: "https://gabriellezevin.com/tomorrowx3/",
 	},
 ];
 
@@ -76,32 +84,37 @@ export function Books() {
 			/>
 			<ul className="space-y-3">
 				{BOOKS.map((book) => (
-					<li
-						key={book.title}
-						className="flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-2xl border border-border bg-card p-4 transition-colors hover:border-pop-amber/50"
-					>
-						<div className="flex flex-row flex-1 gap-4">
-							<span
-								aria-hidden="true"
-								className={`h-auto w-3 shrink-0 rounded-sm bg-${book.color}`}
-							/>
-							<div className="min-w-0 flex-1 py-2">
-								<h3 className="font-semibold text-foreground">{book.title}</h3>
-								<p className="truncate text-sm text-muted-foreground">
-									{book.author}
-								</p>
+					<li key={book.title}>
+						<a
+							href={book.link}
+							target="_blank"
+							className="flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-2xl border border-border bg-card p-4 transition-colors hover:border-pop-amber/50"
+						>
+							<div className="flex flex-row flex-1 gap-4">
+								<span
+									aria-hidden="true"
+									className={`h-auto w-3 shrink-0 rounded-sm bg-${book.color}`}
+								/>
+								<div className="min-w-0 flex-1 py-2">
+									<h3 className="font-semibold text-foreground">
+										{book.title}
+									</h3>
+									<p className="truncate text-sm text-muted-foreground">
+										{book.author}
+									</p>
+								</div>
 							</div>
-						</div>
-						<div className="flex w-full sm:w-auto gap-4 flex-col sm:flex-row items-end">
-							<span
-								className={`rounded-full bg-${book.color}/15 px-3 py-1 text-xs font-medium text-${book.color} ring-1 ring-inset ring-${book.color}/30`}
-							>
-								{book.genre}
-							</span>
-							<div className="flex flex-row items-center gap-0.5">
-								<StarRating rating={book.stars} />
+							<div className="flex w-full sm:w-auto gap-4 flex-col sm:flex-row items-end">
+								<span
+									className={`rounded-full bg-${book.color}/15 px-3 py-1 text-xs font-medium text-${book.color} ring-1 ring-inset ring-${book.color}/30`}
+								>
+									{book.genre}
+								</span>
+								<div className="flex flex-row items-center gap-0.5">
+									<StarRating rating={book.stars} />
+								</div>
 							</div>
-						</div>
+						</a>
 					</li>
 				))}
 			</ul>
