@@ -128,13 +128,13 @@ export function PhotoGallery() {
 					))}
 				</div>
 
-				<div className="flex flex-row mt-4 justify-end uppercase font-semibold text-sm tracking-wider text-muted-foreground hover:text-pop-cyan">
+				<div className="flex flex-row mt-4 justify-end uppercase font-semibold text-xs sm:text-sm tracking-wider text-muted-foreground hover:text-pop-cyan">
 					<a
 						href="https://instagram.com/harrison.shoots"
 						className="inline-flex items-center gap-0.5"
 					>
 						See more of my photos on my Instagram
-						<ArrowRight className="size-5" />
+						<ArrowRight className="size-4 sm:size-5" />
 					</a>
 				</div>
 
