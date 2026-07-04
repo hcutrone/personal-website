@@ -78,28 +78,30 @@ export function Books() {
 				{BOOKS.map((book) => (
 					<li
 						key={book.title}
-						className="flex items-center gap-4 rounded-2xl border border-border bg-card p-4 transition-colors hover:border-pop-amber/50"
+						className="flex flex-col sm:flex-row items-start sm:items-center gap-4 rounded-2xl border border-border bg-card p-4 transition-colors hover:border-pop-amber/50"
 					>
-						<span
-							aria-hidden="true"
-							className={`h-14 w-3 shrink-0 rounded-sm bg-${book.color}`}
-						/>
-						<div className="min-w-0 flex-1">
-							<h3 className="truncate font-semibold text-foreground">
-								{book.title}
-							</h3>
-							<p className="truncate text-sm text-muted-foreground">
-								{book.author}
-							</p>
+						<div className="flex flex-row flex-1 gap-4">
+							<span
+								aria-hidden="true"
+								className={`h-auto w-3 shrink-0 rounded-sm bg-${book.color}`}
+							/>
+							<div className="min-w-0 flex-1 py-2">
+								<h3 className="font-semibold text-foreground">{book.title}</h3>
+								<p className="truncate text-sm text-muted-foreground">
+									{book.author}
+								</p>
+							</div>
 						</div>
-						<div className="flex flex-row items-center gap-0.5">
-							<StarRating rating={book.stars} />
+						<div className="flex w-full sm:w-auto gap-4 flex-col sm:flex-row items-end">
+							<span
+								className={`rounded-full bg-${book.color}/15 px-3 py-1 text-xs font-medium text-${book.color} ring-1 ring-inset ring-${book.color}/30`}
+							>
+								{book.genre}
+							</span>
+							<div className="flex flex-row items-center gap-0.5">
+								<StarRating rating={book.stars} />
+							</div>
 						</div>
-						<span
-							className={`rounded-full bg-${book.color}/15 px-3 py-1 text-xs font-medium text-${book.color} ring-1 ring-inset ring-${book.color}/30`}
-						>
-							{book.genre}
-						</span>
 					</li>
 				))}
 			</ul>
