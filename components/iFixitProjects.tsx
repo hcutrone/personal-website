@@ -61,9 +61,11 @@ export function WorkProjects() {
 					<IFixitLogo className="size-16 fill-blue-500" />
 					<div>
 						<h3 className="text-xl font-bold">iFixit</h3>
-						<p className="text-md">
-							Software Engineer 2023 - Present | Software Engineering Apprentice
-							2022-2023
+						<p className="sm:text-base text-sm">
+							Software Engineer 2022 - Present
+						</p>
+						<p className="sm:text-sm text-xs text-muted-foreground">
+							Promoted from Apprentice June 2023
 						</p>
 					</div>
 				</div>
