@@ -41,7 +41,7 @@ export function Socials({ className }: { className?: string }) {
 	return (
 		<ul
 			className={cn(
-				"mt-8 flex flex-wrap items-center justify-center gap-3",
+				"mt-8 flex flex-wrap w-full items-center justify-between sm:justify-center sm:gap-3",
 				className,
 			)}
 			aria-label="Social links"

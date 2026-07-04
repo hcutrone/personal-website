@@ -128,13 +128,13 @@ export function PhotoGallery() {
 					))}
 				</div>
 
-				<div className="flex flex-row mt-4 justify-end uppercase font-semibold text-sm tracking-wider text-muted-foreground hover:text-pop-cyan">
+				<div className="flex flex-row mt-4 justify-end uppercase font-semibold text-xs sm:text-sm tracking-wider text-muted-foreground hover:text-pop-cyan">
 					<a
 						href="https://instagram.com/harrison.shoots"
 						className="inline-flex items-center gap-0.5"
 					>
 						See more of my photos on my Instagram
-						<ArrowRight className="size-5" />
+						<ArrowRight className="size-4 sm:size-5" />
 					</a>
 				</div>
 
@@ -152,7 +152,7 @@ export function PhotoGallery() {
 										className="object-contain"
 									/>
 								</div>
-								<figcaption className="flex items-center justify-between gap-4 px-5 py-4">
+								<figcaption className="flex flex-col sm:flex-row items-start sm:items-center justify-between sm:gap-4 px-3 sm:px-5 py-2 sm:py-4">
 									<Dialog.Title className="text-sm font-medium text-foreground text-pretty">
 										{active.alt}
 									</Dialog.Title>
