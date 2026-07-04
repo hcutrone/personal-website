@@ -48,14 +48,16 @@ export function Landing() {
 				</h2>
 
 				<p className="mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground text-pretty sm:text-lg">
-					Full-stack software engineer with 4 years of experience shipping
-					consumer-facing web and mobile products at scale. Owns features
-					end-to-end across{" "}
-					<span className="text-pop-pink-text">
-						TypeScript/React, Next.js, PHP, and React Native,
-					</span>{" "}
-					with a track record of leading cross-functional projects, mentoring
-					teammates, and delivering reliable, well-tested code.
+					Software Engineer with 4 years of experience shipping consumer-facing
+					web and mobile products at scale.{" "}
+					<span className="hidden sm:inline">
+						Owns features end-to-end across{" "}
+						<span className="text-pop-pink-text">
+							TypeScript/React, Next.js, PHP, and React Native,
+						</span>{" "}
+						with a track record of leading cross-functional projects, mentoring
+						teammates, and delivering reliable, well-tested code.
+					</span>
 				</p>
 
 				<Socials />

@@ -31,7 +31,7 @@ export default function Page() {
 						Designed &amp; built by Harrison Cutrone. Made with React, Radix UI,
 						and Tailwind CSS.
 					</p>
-					<Socials className="justify-center sm:justify-start" />
+					<Socials className="sm:justify-start" />
 				</footer>
 			</main>
 		</div>
